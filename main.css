@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+:root{
+ --brightYellow:#E3B505;
+ --darkBrown:#BB9457;
+ --yellow:rgb(242, 180, 80); 
+ --brown:#382923;
+ --black:#191919;
+ --grey:#A9B2AC;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+/*Navigation Bar*/
+
+nav{
+    position: fixed;
+    background: rgba(242,180,80,0.9);
+    font-size: 1rem;
+}
+
+.dropdown-menu{
+    background: rgba(242,180,80,0.9);
+    font-size: 1rem;
+}
