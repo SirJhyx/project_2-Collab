@@ -1,14 +1,23 @@
 @import "mediaQuery";
 
+.brand-logo {
+  width: 50px;
+  height: 40px;
+}
+.dropdown-menu .show {
+  left: 10% !important;
+}
 .navbar-nav {
   flex-direction: row !important;
   .dropdown-menu {
+    background-color: rgba(242, 180, 80, 0.9);
     position: absolute !important;
     right: 30%;
+    font-size: 1.2em;
+    &[data-bs-popper] {
+      left: -100px;
+    }
   }
-}
-.dropdown-menu[data-bs-popper] {
-  left: -100px !important;
 }
 
 .navbar {
@@ -16,7 +25,9 @@
   background-color: rgba(242, 180, 80, 0.9) !important;
   transition: all 1s ease-in-out;
 }
-
+.navbar-brand {
+  font-size: 1.2em !important;
+}
 .navBtn .bar1,
 .bar2,
 .bar3 {
@@ -68,9 +79,6 @@
     flex-direction: column !important;
     align-items: flex-start !important;
   }
-  .dropdown-menu[data-bs-popper] {
-    left: 100% !important;
-  }
 
   .nav-show {
     width: 10rem !important;
@@ -81,13 +89,16 @@
     flex-direction: column !important;
   }
 
-  .navbar-brand {
-    // position: absolute;
-    top: 0%;
-  }
   .navBtn {
     animation: backInDown;
     animation-duration: 1.2s;
     display: block;
+  }
+  .container-fluid {
+    flex-direction: column !important;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    left: 60px !important;
   }
 }
