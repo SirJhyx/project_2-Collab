@@ -1,17 +1,20 @@
 @import "mediaQuery";
-@import "base";
 
 .navbar-nav {
   flex-direction: row !important;
   .dropdown-menu {
     position: absolute !important;
-    right: 10%;
+    right: 30%;
   }
+}
+.dropdown-menu[data-bs-popper] {
+  left: -100px !important;
 }
 
 .navbar {
+  z-index: 100;
   background-color: rgba(242, 180, 80, 0.9) !important;
-  transition: all 0.5s linear;
+  transition: all 1s ease-in-out;
 }
 
 .navBtn .bar1,
@@ -26,6 +29,7 @@
 }
 
 .navBtn {
+  z-index: 10;
   position: fixed;
   top: 5%;
   right: 5%;
@@ -52,7 +56,7 @@
   margin: 0 5px;
 }
 
-@include respond-below(md) {
+@include respond-below(lg) {
   .navbar {
     height: 0;
     position: fixed !important;
@@ -61,33 +65,29 @@
     height: 100%;
     width: 0;
     overflow: hidden;
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
+  .dropdown-menu[data-bs-popper] {
+    left: 100% !important;
+  }
+
   .nav-show {
     width: 10rem !important;
+    overflow: visible;
   }
+
   .navbar-nav {
     flex-direction: column !important;
   }
+
   .navbar-brand {
-    position: absolute;
+    // position: absolute;
     top: 0%;
   }
-  .bar1 {
-    animation: backInDown;
-    animation-duration: 2s;
-  }
-  .bar2 {
-    animation: backInLeft;
-    animation-duration: 1s;
-  }
-  .bar3 {
-    animation: backInUp;
-    animation-duration: 2s;
-  }
   .navBtn {
-    animation: tada;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: backInDown;
+    animation-duration: 1.2s;
     display: block;
   }
 }

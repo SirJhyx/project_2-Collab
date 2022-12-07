@@ -4,3 +4,9 @@ $yellow: rgb(242, 180, 80);
 $brown: #382923;
 $black: #191919;
 $grey: #a9b2ac;
+
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+body {
+  font-family: "Just Another Hand", cursive !important;
+}
