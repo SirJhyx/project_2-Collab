@@ -76,7 +76,7 @@ let addItemToCart=(productName,productPrice,imgSrc) =>{
         }
     }
     let cartAddItemContent=`
-    <td class="cart-img"><img src="${imgSrc}" alt="">${productName}</td>
+    <td class="cart-img"><img src="${imgSrc}" alt=""><br>${productName}</td>
     <td class="price">${productPrice}</td>
     <td>
       <div class="input-group cart-Qty-inpt">
@@ -86,7 +86,6 @@ let addItemToCart=(productName,productPrice,imgSrc) =>{
     </td>`
     cartAddItem.innerHTML=cartAddItemContent
     cartContain.append(cartAddItem)
-    alert(`${productName} Added to the Cart`)
 
     cartAddItem.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartAddItem.getElementsByClassName('quantity')[0].addEventListener('change', quantityChange)

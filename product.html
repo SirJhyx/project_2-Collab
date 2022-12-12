@@ -70,9 +70,9 @@
 
 
 
-  <div class="container">
+  <div class="container-md">
     <div class="container-prod-banner">
-      <div class="prod-banner">
+      <div class="prod-banner mb-5">
         <h1>Custom Cake</h1>
         <div class="prod-banner-text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum qui officia eius fugit dolor consequatur
@@ -80,7 +80,7 @@
           Dolorum.
         </div>
         <div>
-          <button>Order Now</button>
+          <button class="order-now-btn">Order Now</button>
         </div>
       </div>
 
@@ -94,7 +94,9 @@
   <div class="cart-container cart-btn" data-bs-toggle="modal" data-bs-target="#Modal">
     <div class="cart-icon">
       <i class="fa-solid fa-cart-shopping"></i>
-      <span>Cart</span>
+      <!-- <span class="in-cart">0</span>
+      <span class="mx-5 btn-total">Total Price:<span class=" total-in-cart">0</span></span> -->
+
     </div>
   </div>
 
@@ -125,7 +127,7 @@
 
         </div>
         <div class="modal-footer justify-content-between">
-          <div class="item-total">Total:</div>
+          <div>Total:<span class="item-total"></span></div>
           <button type="button" class="btn btn-warning checkout">Checkout</button>
         </div>
       </div>
@@ -216,7 +218,7 @@
         <div class="col-lg-6 col-xl-4">
           <div class="card text-center mb-4">
             <div class="card-header prod-name">
-              Cake 5
+              Cake 5dasdasdasd asd
             </div>
             <img class="product-img" src="https://dummyimage.com/300x300/0818ff" alt="" />
             <div class="card-body p-3">
