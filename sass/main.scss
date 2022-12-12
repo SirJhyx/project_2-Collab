@@ -1,4 +1,47 @@
-@import "base";
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+$brightYellow: #e3b505;
+$darkBrown: #bb9457;
+$yellow: rgb(242, 180, 80);
+$brown: #382923;
+$black: #191919;
+$grey: #a9b2ac;
+
+body {
+  font-family: "Just Another Hand", cursive !important;
+  font-size: 1.5em !important;
+  //   font-weight: ;
+}
+
 @import "navbar";
 @import "banner";
+@import "about";
+@import "work";
+@import "contact";
+@import "product_banner";
+@import "product_cart";
+@import "product_item";
 @import "mediaQuery";
+
+#preloader {
+  background: $brightYellow url(../img/logo.gif) no-repeat center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  position: fixed;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  &::before {
+    content: "";
+    background: $brightYellow;
+    width: 5rem;
+    height: 0.25rem;
+    position: absolute;
+    bottom: 15%;
+  }
+}
