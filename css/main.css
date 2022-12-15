@@ -57,12 +57,24 @@ body {
   z-index: -1;
 }
 
+.product-img:hover{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
 @media (max-width: 991px) {
   .container-prod-banner {
     flex-direction: column;
   }
   .prod-banner-img {
-    width: 100px;
+    width: 100%;
     position: relative;
     height: 100%;
   }
@@ -138,6 +150,7 @@ body {
 
 .card-text {
   color: #a9b2ac;
+  font-size: 1.5em;
 }
 
 .prod-name {
@@ -454,3 +467,4 @@ footer {
   font-size: 1rem;
   text-transform: capitalize;
 }
+
