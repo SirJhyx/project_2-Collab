@@ -375,7 +375,7 @@ body {
   line-height: 1.5;
   margin-top: 1rem;
   color: #a9b2ac;
-  font-size: 1.25rem !important;
+  font-size: 1.5rem !important;
 }
 
 .about_img-item {
@@ -383,12 +383,16 @@ body {
   display: block;
   height: 100%;
   border-radius: 0.25rem;
+  -webkit-box-shadow: 0 50px 56px -56px rgba(0, 0, 0);
+  -moz-box-shadow: 0 58px 56px -56px rgba(0, 0, 0);
+  box-shadow: 0 58px 56px -26px rgba(0, 0, 0);
 }
 
 .work-container {
   max-width: 90vw;
   margin: 2rem auto;
 }
+
 
 .work-item__img {
   width: 100%;
